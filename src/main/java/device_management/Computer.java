@@ -61,4 +61,8 @@ public class Computer {
         dataStream = data;
     }
 
+    public String outputDataStream(){
+        return outputData(getDataStream());
+    }
+
 }

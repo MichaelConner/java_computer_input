@@ -105,4 +105,15 @@ public class ComputerTest {
         assertEquals("hello", computer.getDataStream());
     }
 
+    @Test
+    public void canOutputDataStreamNull(){
+        assertEquals("null is now on screen", computer.outputDataStream());
+    }
+
+    @Test
+    public void canOutputDataStreammouse(){
+        computer.setDataStream(computer.inputData());
+        assertEquals("click from Mouse is now on screen", computer.outputDataStream());
+    }
+
 }
