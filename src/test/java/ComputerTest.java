@@ -94,4 +94,15 @@ public class ComputerTest {
         assertEquals("click from Keyboard", computer.inputData());
     }
 
+    @Test
+    public void canGetDataStream(){
+        assertEquals(null, computer.getDataStream());
+    }
+
+    @Test
+    public void canSetDataStream(){
+        computer.setDataStream("hello");
+        assertEquals("hello", computer.getDataStream());
+    }
+
 }
